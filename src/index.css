@@ -12,3 +12,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.toggler-parent{
+	width: 60px;
+	height: 25px;
+	border: 1px solid #848d94;
+	background-color: rgba(0, 8, 12, 0.28);
+	border-radius: 26px;
+	display: flex;
+	color: white;
+	cursor: pointer;
+	transition: 1s;
+}
+.toggler-parent > .toggled-text{
+	margin-left: 2px;
+	margin-top: 1px;
+}
+.toggler-indicator{
+	border: 1px solid #ccc;
+	background-color: white;
+	height: 95%;
+	border-radius: 26px;
+	width: 40%;
+}
+.toggled-on{
+	flex-direction: row-reverse;
+	background-color: #0480ea;
+	transition: 1s;
+}
+.toggled-on > .toggled-text{
+	position: relative;
+   right: 3px;
+}
